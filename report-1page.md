@@ -18,4 +18,4 @@ Các test cơ bản gồm: biên dịch, round-trip encrypt/decrypt, plaintext n
 
 ## Kết luận / Conclusion
 
-Bài lab phù hợp để minh họa luồng xử lý AES-128 và giúp sinh viên hiểu mối quan hệ giữa mã hóa, giải mã, key expansion và padding. Hạn chế hiện tại là cách đọc/ghi ciphertext theo C-style string chưa thật sự an toàn cho dữ liệu binary; do đó có thể mở rộng bằng cách đọc/ghi theo byte vector, thêm PKCS#7 padding và bổ sung test vector chuẩn AES.
+Hạn chế hiện tại là padding được dùng dạng zero padding để đơn giản hóa. Nếu muốn mở rộng, có thể chuyển sang PKCS#7 padding và bổ sung thêm test vector chuẩn AES.
